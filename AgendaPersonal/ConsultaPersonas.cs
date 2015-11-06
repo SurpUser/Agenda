@@ -34,14 +34,14 @@ namespace AgendaPersonal
             }
             if (BuscarcomboBox.Text == "Por PeronaId")
             {
-                BuscardataGridView.DataSource = persona.Listado(" * ", " PersonaId = "+Id, "");
+                BuscardataGridView.DataSource = persona.Listado(" * ", " PersonaId = " + Id, "");
             }
 
             else if (BuscardataGridView.RowCount == 0)
             {
-                MessageBox.Show("Persona no Existe","Error");
+                MessageBox.Show("Persona no Existe", "Error");
             }
-            
+            //BuscardataGridView.Rows[0].DefaultCellStyle.BackColor = Color.Green;
         }
     }
 }
